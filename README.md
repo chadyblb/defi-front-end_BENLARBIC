@@ -50,8 +50,6 @@ Users should be able to:
 
 Knowing this HTML, i learned for the image to be centered AND streched, you have to apply stretch to the entire div and then set the image to cover, so the image takes the entire space while still being the shape you want it to be.
 
-To see how you can add code snippets, see below:
-
 ```html
     <div class="main-div">
       <div class="main-div_image"><img src="/assets/images/illustration-sign-up-mobile.svg" alt="Illustration Sign Up" class="main-image"></div>
