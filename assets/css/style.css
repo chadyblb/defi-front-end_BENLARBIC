@@ -1,0 +1,200 @@
+@charset "UTF-8";
+
+/**
+ * @author Chady Ben Larbi <2462189@csfoy.ca>
+/* Reset
+   ========================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url(normalize.css);
+
+/* Typo
+   ========================================================================== */
+:root {
+   --color-red: hsl(4, 100%, 67%);
+   --color-blue800: hsl(234, 29%, 20%);
+   --color-blue700: hsl(235, 18%, 26%);
+   --color-gray: hsl(0, 0%, 58%);
+   --color-white: hsl(0, 0%, 100%);
+   --color-pink: #FFE8E6;
+}
+
+html {
+   font-size: 62.5%;
+}
+
+body {
+   font-family: "Roboto", sans-serif;
+   font-size: 1.6rem;
+   background-color: var(--color-blue700);
+}
+
+h1 {
+   color: var(--color-blue800);
+}
+
+/* Main
+   ========================================================================== */
+
+.main-div {
+   margin: 5%;
+   background-color: var(--color-white);
+   display: flex;
+   flex-direction: column;
+   color: var(--color-blue800);
+   border-radius: 1.5em;
+}
+
+.main-div_image {
+   display: contents;
+}
+
+@media (min-width:800px) {
+
+   .main-div {
+      flex-direction: row-reverse;
+      justify-content: center;
+      text-align: center;
+   }
+
+   .main-div_image {
+      flex: 1;
+      display: flex;
+      align-items: stretch;
+      margin-top: 1em;
+      margin-bottom: 1em;
+   }
+
+   .main-image {
+      object-fit: cover;
+      width: 100%;
+      height: auto;
+      object-position: center;
+      border-radius: 1.5em;
+   }
+}
+
+ul {
+   list-style: none;
+   padding: 0;
+}
+
+li {
+   display: flex;
+   align-items: top;
+   margin-bottom: 2rem;
+}
+
+li::before {
+   content: '';
+   display: inline-block;
+   min-width: 20px;
+   height: 20px;
+   margin-right: 1em;
+   background-image: url('../images/icon-list.svg');
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.email-adress {
+   color: var(--color-blue800);
+   font-weight: bold;
+   font-size: 0.8em;
+}
+
+.legend-email {
+   margin-bottom: 0.5em;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+div div {
+   margin: 0 5%;
+}
+
+.btnSubscribe {
+   margin: auto;
+   width: 100%;
+   background-color: var(--color-blue800);
+   color: var(--color-white);
+   border-radius: 0.3em;
+   border: none;
+   padding: 1em;
+   margin-top: 2em;
+   margin-bottom: 2em;
+}
+
+.champCourriel {
+   width: 100%;
+   box-sizing: border-box;
+   border: 0.5px solid var(--color-gray);
+   border-radius: 0.3em;
+   padding: 1em;
+
+}
+
+.champCourriel::placeholder {
+   color: var(--color-gray);
+}
+
+.zone-champ {
+   margin: 0;
+}
+
+.div__div {
+   display: flex;
+   flex-direction: column;
+   align-items: left;
+   justify-content: center;
+}
+
+.attribution {
+   color: var(--color-gray);
+   background-color: var(--color-white);
+   text-align: center;
+   padding: 1em 0;
+}
+
+.erreur {
+   color: var(--color-red);
+   background-color: var(--color-pink);
+   border-color: var(--color-red);
+}
+
+.zone-champ__message-erreur {
+   color: var(--color-red);
+}
+
+.hoverBtn:hover {
+background: linear-gradient(to right, #ff6b6b, #ff8e72);;
+}
+
+/* Sucess message
+   ========================================================================== */
+.successmessage {
+   background-color: var(--color-white);
+   padding: 4em 5% 4em 5%;
+   max-width: 360px;
+   border-radius: 2em;
+   margin: 1em auto 1em auto;
+   
+}
+
+.successmessage-email {
+   color: var(--color-blue800);
+   font-weight: bold;
+}
+
+.successmessage-button {
+   border: none;
+   border-radius: 0.3em;
+   padding: 1em;
+   width: 100%;
+   background-color: var(--color-blue800);
+   color: var(--color-white);
+   margin-top: 10em;
+}
+
+/* Typo
+   ========================================================================== */
